@@ -1,12 +1,21 @@
-import React from 'react'
-import Navbar from '../Navbar/Navbar'
+import React, { createContext, useState } from "react";
+import Navbar from "../Navbar/Navbar";
+import VideosSection from "../VideosSection/VideosSection";
+
+export const suggestionContext = createContext(null);
+
+
 
 const MainSection = () => {
+  const [suggestionValue, setSuggestionValue] = useState("random");
   return (
-    <div className='bg-slate-700 w-[100%] h-[200vh]'>
-        <Navbar/>
-        </div>
-  )
-}
+    <suggestionContext.Provider value={{suggestionValue, setSuggestionValue}}>
+      <div className="bg-slate-700 w-[100%]">
+        <Navbar />
+        <VideosSection />
+      </div>
+    </suggestionContext.Provider>
+  );
+};
 
-export default MainSection
+export default MainSection;

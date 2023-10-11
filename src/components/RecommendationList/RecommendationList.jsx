@@ -1,7 +1,12 @@
 import React from 'react'
 import RecommendationCard from '../RecommendationCard/RecommendationCard'
+import { useContext } from 'react'
+import { suggestionContext } from '../MainSection/MainSection'
 
 const RecommendationList = () => {
+
+  const data = useContext(suggestionContext)
+
   return (
     <div className='flex gap-3 pl-7'>
         <RecommendationCard content = "All"/>

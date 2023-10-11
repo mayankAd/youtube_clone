@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import RecommendationList from "../RecommendationList/RecommendationList";
 
+
+
 const Navbar = () => {
+
   return (
     <div className=" h-[111px] bg-black w-[calc(100%-235px)] ml-[235px] fixed flex flex-col gap-[18px]">
       <div className="flex justify-between">
