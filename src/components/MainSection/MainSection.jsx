@@ -10,7 +10,7 @@ const MainSection = () => {
   const [suggestionValue, setSuggestionValue] = useState("random");
   return (
     <suggestionContext.Provider value={{suggestionValue, setSuggestionValue}}>
-      <div className="bg-slate-700 w-[100%]">
+      <div className="bg-black w-[100%]">
         <Navbar />
         <VideosSection />
       </div>

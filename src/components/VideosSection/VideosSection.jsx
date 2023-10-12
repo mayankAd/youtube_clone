@@ -11,7 +11,7 @@ const VideoSectionRouter = createBrowserRouter([
 const VideosSection = () => {
   return (
     <>
-      <div className=" ml-[235px] mt-[111px] bg-gray-700 h-[calc(100vh-112px)]">
+      <div className=" sm:ml-[235px] mt-[111px] bg-black h-[calc(100vh-112px)]">
         <RouterProvider router={VideoSectionRouter} />
       </div>
     </>

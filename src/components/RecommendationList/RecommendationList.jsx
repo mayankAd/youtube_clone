@@ -8,7 +8,7 @@ const RecommendationList = () => {
   const data = useContext(suggestionContext)
 
   return (
-    <div className='flex gap-3 pl-7'>
+    <div className='flex gap-3 pl-7 '>
         <RecommendationCard content = "All"/>
         <RecommendationCard content = "JavaScript"/>
         <RecommendationCard content = "Live"/>

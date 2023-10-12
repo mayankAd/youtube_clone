@@ -50,13 +50,13 @@ const LandingVideosSection = () => {
 
   return (
     
-    <div className='bg-black flex flex-wrap gap-5 pl-6 pt-9'>
+    <div className='bg-black flex flex-wrap gap-5 pl-6 pt-9 justify-center'>
       {
         data?.map((dat)=>{
           {
             return(
               <div key={dat.id.videoId}>
-              <VideoCard image = {dat.snippet.thumbnails.high.url} title = {dat.snippet.title} channelTitle = {dat.snippet.channelTitle}/>
+              <VideoCard image = {dat.snippet.thumbnails.high.url} title = {dat.snippet.title} channelTitle = {dat.snippet.channelTitle} videoLinkId = {dat.id.videoId}/>
               </div>
             )
           }

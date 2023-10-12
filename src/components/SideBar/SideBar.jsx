@@ -15,16 +15,17 @@ const showLess = () =>{
 
 const SideBar = () => {
   return (
-    <div className="w-[235px] bg-black h-[100vh] fixed">
+    <div className="w-[235px] bg-black h-[100vh] fixed hidden sm:block">
       <div className="text-white flex gap-4 h-[60px] pl-7 items-center fixed bg-black">
         <span class="material-symbols-outlined rounded-full hover:bg-slate-800 p-2 cursor-pointer">menu</span>
-        <div className="h-[40px]">
+        <div className="h-[40px] w-[100px] pt-2">
           <img
-            className="h-[100%] w-[100%] object-contain"
-            src="logo.png"
+            className=" w-[100%] object-cover"
+            src="logo2.png"
             alt="logo"
           />
         </div>
+        
       </div>
       <div className="flex flex-col text-[15px] mt-[60px] h-[calc(100vh-62px)] overflow-y-auto">
         <SideBarLink name="Home" icon="home" />
