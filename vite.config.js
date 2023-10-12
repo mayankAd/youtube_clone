@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
     define: {
       'process.env.VITE_RAPID_API_KEY': JSON.stringify(env.VITE_RAPID_API_KEY)
     },
+    base: "./",
     plugins: [react()],
   }
 })
