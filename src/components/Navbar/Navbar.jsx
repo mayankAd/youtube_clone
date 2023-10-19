@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <div className=" h-[111px] bg-black sm:w-[calc(100%-235px)] sm:ml-[235px] fixed flex flex-col gap-[18px]">
       <div className="flex sm:justify-between sm:gap-8 gap-20">
-        <div className="h-[50px] w-[100px] pt-4 sm:hidden ml-8">
+        <a href="#"><div className="h-[50px] w-[100px] pt-4 sm:hidden ml-8">
           <img src="logo2.png" className="w-[100%] object-cover" alt="" />
-        </div>
+        </div></a>
         <div className="bg-black flex justify-center pt-2 sm:pl-[210px]">
           <div className=" flex w-[200px] sm:w-[600px] border border-gray-700 bg-black rounded-full ">
             <input
